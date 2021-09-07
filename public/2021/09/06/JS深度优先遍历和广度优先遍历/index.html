@@ -5,15 +5,22 @@
   
 
   
-  <title>Sailing</title>
+  <title>JS深度优先遍历和广度优先遍历 | Sailing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Sailing">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="之前知识对深度优先遍历和广度优先遍历有一个浅显的了解，后来详细查询资料，做了如下整理。 理念1、深度优先遍历是指自上而下的遍历。  2、广度优先遍历是指逐层遍历。  优势对比1、理念对比深度优先不需要记住所有的节点，所以占用空间小； 而广度优先需要记录所有的节点，所以占用大。 深度优先有回溯操作(走到最底层，再从第一层开始)所以相对而言时间会长一点。  深度优先采用的是 堆栈 的形式, 即先进后出">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS深度优先遍历和广度优先遍历">
+<meta property="og:url" content="http://example.com/2021/09/06/JS%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86%E5%92%8C%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86/index.html">
 <meta property="og:site_name" content="Sailing">
+<meta property="og:description" content="之前知识对深度优先遍历和广度优先遍历有一个浅显的了解，后来详细查询资料，做了如下整理。 理念1、深度优先遍历是指自上而下的遍历。  2、广度优先遍历是指逐层遍历。  优势对比1、理念对比深度优先不需要记住所有的节点，所以占用空间小； 而广度优先需要记录所有的节点，所以占用大。 深度优先有回溯操作(走到最底层，再从第一层开始)所以相对而言时间会长一点。  深度优先采用的是 堆栈 的形式, 即先进后出">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b7ecdca589f64da4b94c972424943a26~tplv-k3u1fbpfcp-watermark.image">
+<meta property="og:image" content="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a96d2a99ca284ee98e46ee9d3805660d~tplv-k3u1fbpfcp-watermark.image">
+<meta property="article:published_time" content="2021-09-06T11:42:18.309Z">
+<meta property="article:modified_time" content="2021-09-07T02:23:06.317Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b7ecdca589f64da4b94c972424943a26~tplv-k3u1fbpfcp-watermark.image">
   
     <link rel="alternate" href="/atom.xml" title="Sailing" type="application/atom+xml">
   
@@ -62,9 +69,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-JS深度优先遍历和广度优先遍历" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-JS深度优先遍历和广度优先遍历" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/09/06/JS%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86%E5%92%8C%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86/" class="article-date">
   <time datetime="2021-09-06T11:42:18.309Z" itemprop="datePublished">2021-09-06</time>
@@ -77,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/09/06/JS%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86%E5%92%8C%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86/">JS深度优先遍历和广度优先遍历</a>
+    <h1 class="article-title" itemprop="name">
+      JS深度优先遍历和广度优先遍历
     </h1>
   
 
@@ -116,11 +121,9 @@
     </footer>
   </div>
   
-</article>
-
-
+    
   
-
+</article>
 
 </section>
         
